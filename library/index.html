@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <title>Library</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu-bar">
+            <ul class="menu">
+                <li class="menu__item">Help Center</li>
+                <li class="menu__item">Our Support</li>
+                <li class="menu__item menu__item--active">
+                    <img src="img/user.png" alt="user">
+                    John Doe
+                    <img src="img/ok.png" alt="ok">
+                </li>
+            </ul>
+        </div>
+        <div class="main-wrapper">
+            <div class="sidebar">
+                <div class="add">
+                    <a class="add__btn" href="#">
+                        <span class="add__button--plus">+</span>
+                        <span class="add__button--text">ADD A BOOK</span>
+                    </a>
+                </div>
+                <ul class="sidebar-block sidebar-menu">
+                    <li class="sidebar-menu__item">
+                        <img class="sidebar-menu__image" src="img/menu_01.png" alt="">
+                        <a href="#" class="sidebar-menu__link">Now Reading</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <img class="sidebar-menu__image" src="img/menu_02.png" alt="">
+                        <a href="#" class="sidebar-menu__link">Browse</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <img class="sidebar-menu__image" src="img/menu_03.png" alt="">
+                        <a href="#" class="sidebar-menu__link">Buy Books</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <img class="sidebar-menu__image" src="img/menu_04.png" alt="">
+                        <a href="#" class="sidebar-menu__link">Favourite Books</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <img class="sidebar-menu__image" src="img/menu_05.png" alt="">
+                        <a href="#" class="sidebar-menu__link">Wishlist</a>
+                    </li>
+                    <li class="sidebar-menu__item">
+                        <img class="sidebar-menu__image" src="img/menu_06.png" alt="">
+                        <a href="#" class="sidebar-menu__link">History</a>
+                    </li>
+                </ul>
+                <ul class="sidebar-block sidebar-best">
+                    <li class="sidebar-best__item">
+                        <a href="#" class="sidebar-best__link">Must Read Titles</a>
+                    </li>
+                    <li class="sidebar-best__item">
+                        <a href="#" class="sidebar-best__link">Best Of List</a>
+                    </li>
+                    <li class="sidebar-best__item">
+                        <a href="#" class="sidebar-best__link">Classic Novels</a>
+                    </li>
+                    <li class="sidebar-best__item">
+                        <a href="#" class="sidebar-best__link">Non Fiction</a>
+                    </li>
+                </ul>
+                <ul class="sidebar-block sidebar-actions">
+                    <li class="sidebar-actions__item">You added <span class="sidebar-actions__item--bright">The Trial</span> 
+                        by <span class="sidebar-actions__item--bright">Franz Kafka</span> 
+                        to your <span class="sidebar-actions__item--bright">Must Read Titles</span>.
+                        <p class="sidebar-actions__time"> 24 minutes ago</p>
+                    </li>
+                    <li class="sidebar-actions__item">You added <span class="sidebar-actions__item--bright">Fight Club</span> 
+                        by <span class="sidebar-actions__item--bright">Chuck Palahniuk</span> 
+                        to your <span class="sidebar-actions__item--bright">Must Read Titles</span>.
+                        <p class="sidebar-actions__time">24 minutes ago</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="main">
+                <div class="browse-bar">
+                    <h3 class="browse-bar__heading">Browse Available Books</h3>
+                    <div class="filter-bar">
+                        <ul class="filter">
+                            <li class="filter__item filter__item--active" data-filter="showAll">All Books</li>
+                            <li class="filter__item" data-filter="showRecent">Most Recent</li>
+                            <li class="filter__item" data-filter="showPopular">Most Popular</li>
+                            <li class="filter__item" data-filter="showFree">Free Books</li>
+                        </ul>
+                        <input class="filter-search" type="search" name="search" placeholder="Enter Keywords">
+                    </div>
+                    <div class="library">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <ul class="footer-menu">
+                <li class="footer-menu__item"><img src="img/settings.png" alt="settings"></li>
+                <li class="footer-menu__item"><img src="img/support.png" alt="support"></li>
+            </ul>
+        </div>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>
